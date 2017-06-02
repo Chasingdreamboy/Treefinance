@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description = "TreefinanceService made by Treefinance technology."
   s.frameworks = ["UIKit", "MapKit"]
   s.requires_arc = "TreefinanceService/Classes/Arc/**/*"
-  s.source = { :path => 'https://github.com/Chasingdreamboy/Treefinance.git' }
+  s.source = { :git => 'https://github.com/Chasingdreamboy/Treefinance.git' }
 
   s.ios.deployment_target    = '8.0'
   s.ios.vendored_framework   = 'ios/TreefinanceService.framework'
