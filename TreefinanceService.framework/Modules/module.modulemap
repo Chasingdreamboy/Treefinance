@@ -1,0 +1,6 @@
+framework module TreefinanceService {
+  umbrella header "TreefinanceService.h"
+
+  export *
+  module * { export * }
+}
