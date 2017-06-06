@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
   s.authors = {"acct<blob>=<NULL>"=>"wangerdong@treefinance.com.cn"}
   s.homepage = "https://github.com/acct<blob>=<NULL>/TreefinanceService"
   s.description = "TODO: Add long description of the pod here."
-  s.frameworks = ["UIKit", "MapKit", "ImageIO", "MobileCoreServices", "AssetsLibrary", "Accelerate"]
+  s.frameworks = ["UIKit", "MapKit"]
   s.requires_arc = "TreefinanceService/Classes/Arc/**/*"
-  s.source = { :git => 'https://github.com/Chasingdreamboy/Treefinance.git' }
+  s.source = { :path => '.' }
 
   s.ios.deployment_target    = '8.0'
   s.ios.vendored_framework   = 'ios/TreefinanceService.framework'
