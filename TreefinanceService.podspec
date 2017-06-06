@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description = "TODO: Add long description of the pod here."
   s.frameworks = ["UIKit", "MapKit"]
   s.requires_arc = "TreefinanceService/Classes/Arc/**/*"
-  s.source = { :path => '.' }
+  s.source = { :git => 'https://github.com/Chasingdreamboy/Treefinance.git' }
 
   s.ios.deployment_target    = '8.0'
   s.ios.vendored_framework   = 'ios/TreefinanceService.framework'

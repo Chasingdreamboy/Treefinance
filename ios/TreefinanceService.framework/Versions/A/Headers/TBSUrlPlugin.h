@@ -19,5 +19,7 @@
 - (void)sendMail:(NSDictionary *)command;
 - (void)clipboard:(NSDictionary *)command;
 - (void)download:(NSDictionary *)command;
+//打开应用
+- (void)openApplication:(NSDictionary *)command;
 
 @end
