@@ -12,5 +12,5 @@
 
 //- (void)logWithStep:(NSDictionary*)command;
 //- (void)logBlackBox:(NSDictionary*)command;
-- (void)logAppInfo:(NSDictionary*)command;
+//- (void)logAppInfo:(NSDictionary*)command;
 @end

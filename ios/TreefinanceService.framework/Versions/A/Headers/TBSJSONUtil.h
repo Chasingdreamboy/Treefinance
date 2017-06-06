@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RKDropdownAlert.h"
+#import <RKDropdownAlert/RKDropdownAlert.h>
+//#import <RKDropdownAlert.h>
+
 
 
 @interface TBSJSONUtil : NSObject<UIAlertViewDelegate>

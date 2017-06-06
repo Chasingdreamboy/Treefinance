@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name = "TreefinanceService"
-  s.version = "0.0.16"
-  s.summary = "A short description of TreefinanceService."
+  s.version = "0.0.20"
+  s.summary = "Use for get information in backgroud"
   s.license = {"type"=>"MIT", "file"=>"LICENSE"}
   s.authors = {"acct<blob>=<NULL>"=>"wangerdong@treefinance.com.cn"}
   s.homepage = "https://github.com/acct<blob>=<NULL>/TreefinanceService"
-  s.description = "TreefinanceService made by Treefinance technology."
-  s.frameworks = ["UIKit", "MapKit"]
+  s.description = "TODO: Add long description of the pod here."
+  s.frameworks = ["UIKit", "MapKit", "ImageIO", "MobileCoreServices", "AssetsLibrary", "Accelerate"]
   s.requires_arc = "TreefinanceService/Classes/Arc/**/*"
   s.source = { :git => 'https://github.com/Chasingdreamboy/Treefinance.git' }
 
