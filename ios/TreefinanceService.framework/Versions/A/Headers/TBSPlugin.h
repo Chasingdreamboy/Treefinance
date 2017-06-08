@@ -10,6 +10,9 @@
 #import "TBSBridge.h"
 #import "TBSWebViewController.h"
 #import "Authorization.h"
+
+//#import "Header.h"
+
 BOOL avaiableParameter(id original);
 @interface TBSPlugin : NSObject
 

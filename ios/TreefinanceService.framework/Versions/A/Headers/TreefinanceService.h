@@ -6,18 +6,26 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void(^_Nullable CallBackExecute)(NSInteger resultStatus, NSString* _Nullable taskId, NSString * _Nullable uniqueId, NSString * _Nullable params);
+
+typedef NS_ENUM(NSInteger, DSEnviromentType) {
+    DSEnviromentTypeTest = 7001,//测试环境 (大树内部测试环境，外部不稳定)
+    DSEnviromentTypePrepare,//准生产
+    DSEnviromentTypeProduct//发布环境
+};
+
 typedef NS_ENUM(NSInteger, DSWebLoginType) {
     DSWebLoginTypeEmail,
     DSWebLoginTypeOperater,
     DSWebLoginTypeEcommerce
     
 };
+typedef void(^_Nullable CallBackExecute)(NSInteger resultStatus, NSString* _Nullable taskId, NSString * _Nullable uniqueId, NSString * _Nullable params);
 @interface TreefinanceService: NSObject
 
 @property(nonatomic,readonly)  NSString *_Nonnull  appID;
 @property(nonatomic,readonly) NSString *_Nonnull appKey;
 @property(nonatomic,readonly) NSString *_Nonnull sdkVersion;
+@property (nonatomic, readonly) DSEnviromentType enviromentType;
 
 /*
  * 1. 初始化方法获取单例对象
@@ -26,7 +34,15 @@ typedef NS_ENUM(NSInteger, DSWebLoginType) {
 /*
  * 2. 设置appID和appKey
  */
--(void)setupAPPID:(NSString*_Nonnull)appID appKey:(NSString*_Nonnull)appKey;
+
+/**
+ init config of TreefinanceService
+
+ @param appID unique identifier of operator
+ @param appKey public key of RSA
+ @param enviromentType The enviroment of you want to use
+ */
+-(void)setupAPPID:(NSString* _Nonnull)appID appKey:(NSString* _Nonnull)appKey environmentType:(DSEnviromentType)enviromentType;
 
 /*
  3.启动sdk

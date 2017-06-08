@@ -32,7 +32,7 @@ static NSString *appVersionKey      = @"appVersion";//app版本
 static NSString *originalUAKey      = @"originalUA";
 static NSString *schemeUrlKey       = @"schemeUrl";//回调需要打开的detinationClass
 static NSString *isLogedInKey       = @"logedIn";
-static NSString *lastInactiveTimeKey   = @"LastInactiveTime";//最后一次进入后台运行时的时间戳
+static NSString *lastEnteranceTimeKey   = @"lastEnteranceTime";//最后一次进入后台运行时的时间戳
 static NSString *lastGetLocationTimestampKey = @"lastGetLocationTimestamp";
 static NSString *queryStringKey = @"queryString";
 
